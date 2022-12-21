@@ -10,7 +10,9 @@ func main() {
 	}
 
 	funcsESalarios["Rafael"] = 12433.90
+	funcsESalarios["Cleide"] = 32122.32
 
-	fmt.Println(funcsESalarios)
-	fmt.Printf("")
+	for nome, salario := range funcsESalarios {
+		fmt.Println(nome, salario)
+	}
 }
